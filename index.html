@@ -7,14 +7,19 @@
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
-      />
-      <link
-        href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
-        rel="stylesheet"
-        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
-        crossorigin="anonymous"
-      />
-      <style>
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      crossorigin="anonymous"
+    />
+    <style>
       table.table1 tbody td,
       thead th {
         border: 2px solid white;
@@ -48,100 +53,85 @@
           margin-left: auto;
         }
       }
+      .profile-picture {
+        max-width: 250px;
+        height: auto;
+      }
+      .navbar-nav .nav-link {
+        margin-right: 20px;
+        font-size: 18px;
+      }
+      .navbar {
+        background-color: #ff6600;
+        padding-top: 1px;
+        padding-bottom: 1px;
+      }
+      .navbar-brand {
+        color: #fff;
+        font-size: 24px;
+        font-weight: bold;
+      }
+      .navbar-toggler-icon {
+        background-color: #fff;
+      }
+      .navbar-toggler:focus,
+      .navbar-toggler:hover {
+        background-color: #ff9933;
+      }
+      .navbar-nav .nav-link.active {
+        color: #ff9933;
+      }
     </style>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
   </head>
-
   <body style="background-color: #fdf1cb">
     <header>
-      <!-- place navbar here -->
-      <nav
-        class="navbar navbar-expand-sm navbar-light"
-        style="background-color: #cc5500"
-      >
-        <div class="container-fluid">
+      <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+          <a class="navbar-brand" href="#">PORTFOLIO</a>
           <button
             class="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul
-              class="navbar-nav me-auto ms-auto mb-1 mb-lg-0 nav w-100 justify-content-evenly"
-            >
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav">
               <li class="nav-item">
-                <a
-                  class="nav-link"
-                  style="color: rgba(255, 255, 255, 0.666)"
-                  aria-current="page"
-                  href="#"
-                >
-                  <i class="fa fa-home"></i>
-                  <span class="h">About</span></a
-                >
-              </li>
-              <li class="nav-item">
-                <a
-                  class="nav-link"
-                  style="color: rgba(255, 255, 255, 0.666)"
-                  aria-current="page"
-                  href="#acad"
-                >
-                  <i class="fa fa-info"></i>
-                  <span class="h">Academics</span>
+                <a class="nav-link" href="#">
+                  <i class="fas fa-home"></i> Home
                 </a>
               </li>
               <li class="nav-item">
-                <a
-                  class="nav-link"
-                  style="color: rgba(255, 255, 255, 0.666)"
-                  aria-current="page"
-                  href="#tech"
-                >
-                  <i class="fa fa-list"></i>
-                  <span class="h">Technical Skills</span>
+                <a class="nav-link" href="#acad">
+                  <i class="fas fa-info"></i> Academics
                 </a>
               </li>
               <li class="nav-item">
-                <a
-                  class="nav-link"
-                  style="color: rgba(255, 255, 255, 0.666)"
-                  aria-current="page"
-                  href="#pr"
-                >
-                  <i class="fa fa-info"></i>
-                  <span class="h">Projects</span>
+                <a class="nav-link" href="#tech">
+                  <i class="fas fa-list"></i> Technical Skills
                 </a>
               </li>
               <li class="nav-item">
-                <a
-                  class="nav-link"
-                  style="color: rgba(255, 255, 255, 0.666)"
-                  aria-current="page"
-                  href="#ac"
-                >
-                  <i class="fa fa-info"></i>
-                  <span class="h">Achievements</span>
+                <a class="nav-link" href="#pr">
+                  <i class="fas fa-info"></i> Projects
                 </a>
               </li>
               <li class="nav-item">
-                <a
-                  class="nav-link"
-                  style="color: rgba(255, 255, 255, 0.666)"
-                  aria-current="page"
-                  href="#con"
-                >
-                  <i class="fa fa-address-card"></i>
-                  <span class="h">Contact Me</span>
+                <a class="nav-link" href="#ac">
+                  <i class="fas fa-info"></i> Achievements
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#con">
+                  <i class="fas fa-address-card"></i> Contact Me
                 </a>
               </li>
             </ul>
@@ -149,137 +139,154 @@
         </div>
       </nav>
     </header>
-    <main>
-      <br />
-      <div class="container">
-        <div style="width: 100%; text-align: center">
+    <main class="container mt-5">
+      <div class="row">
+        <div class="col-md-3">
           <img
-            src="/Gurveer_1.jpeg"
-            style="float: right; border: 10px solid rgb(255, 196, 86)"
-            height="250px"
-            class="rounded-circle pic"
+            src="Profile_Picture.jpeg"
+            alt="Profile Image"
+            class="img-fluid rounded-circle border border-warning mb-3 profile-picture"
           />
         </div>
-        <h1 class="display-3">GURVEER SINGH VIRK</h1>
-        <p>
-          Email ID:
-          <a href="mailto:gurveervirk.15517@gmail.com" class="display-8"
-            >gurveervirk.15517@gmail.com</a
-          >
-        </p>
-        <hr />
-        <h3><u>Career Objective:</u></h3>
-        <p>
-          Seeking a responsible career opportunity in the field of Computer
-          Science where I can utilize my logical and technical skills towards
-          personal and professional development
-        </p>
-        <hr />
-        <h3 id="acad"><u>Academic information:</u></h3>
-        <div style="overflow-x: auto">
-          <table class="table1">
-            <thead>
-              <tr>
-                <th>Course details</th>
-                <th>Institution</th>
-                <th>University/Board</th>
-                <th>year of passing</th>
-                <th>CGPA</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Bachelors of Technology (Computer Science Engineering)</td>
-                <td>Keshav Memorial Institute of Technology</td>
-                <td>JNTUH</td>
-                <td>2025</td>
-                <td>8.8</td>
-              </tr>
-              <tr>
-                <td>Intermediate-MPBC</td>
-                <td>Delhi Public School, Nacharam</td>
-                <td>CBSE</td>
-                <td>2021</td>
-                <td>96.4%</td>
-              </tr>
-              <tr>
-                <td>School of Secondary Education</td>
-                <td>Delhi Public School, Nacharam</td>
-                <td>CBSE</td>
-                <td>2019</td>
-                <td>95.6%</td>
-              </tr>
-            </tbody>
-          </table>
+        <div class="col-md-9">
+          <h1 class="display-4 mt-4">GURVEER SINGH VIRK</h1>
+          <p class="mb-3">
+            Email ID:
+            <a href="mailto:gurveervirk.15517@gmail.com"
+              >gurveervirk.15517@gmail.com</a
+            >
+          </p>
+          <hr class="mb-4" />
+          <h3 class="mb-3"><u>Career Objective:</u></h3>
+          <p>
+            Seeking a responsible career opportunity in the field of Computer
+            Science where I can utilize my logical and technical skills towards
+            personal and professional development
+          </p>
         </div>
-        <hr />
-        <h3 id="tech"><u>Technical skills:</u></h3>
-        <h4>Programming Languages:</h4>
-        <ul>
-          <li>C</li>
-          <li>C++</li>
-          <li>Java</li>
-          <li>Python</li>
-        </ul>
-        <h4>Databases:</h4>
-        <ul>
-          <li>MySQL</li>
-        </ul>
-        <h4>Web Technologies:</h4>
-        <ul>
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>BootStrap</li>
-          <li>Node</li>
-        </ul>
-        <hr />
-        <h3 id="pr"><u>Projects:</u></h3>
-        <ul>
-          <li><b>Planetary Rover with Robotic Arm using ROS:</b>
+        <!-- <div class="col-md-8"> -->
+        <div class="container-fluid">
+          <hr class="mb-4" />
+          <h3 class="mb-3" id="acad"><u>Academic Information:</u></h3>
+          <div class="table-responsive">
+            <table class="table table-bordered">
+              <thead class="bg-primary text-white">
+                <tr>
+                  <th>Course Details</th>
+                  <th>Institution</th>
+                  <th>University/Board</th>
+                  <th>Year of Passing</th>
+                  <th>CGPA</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Bachelor of Technology (Computer Science Engineering)</td>
+                  <td>Keshav Memorial Institute of Technology</td>
+                  <td>JNTUH</td>
+                  <td>2025</td>
+                  <td>8.8</td>
+                </tr>
+                <tr>
+                  <td>Intermediate-MPBC</td>
+                  <td>Delhi Public School, Nacharam</td>
+                  <td>CBSE</td>
+                  <td>2021</td>
+                  <td>96.4%</td>
+                </tr>
+                <tr>
+                  <td>School of Secondary Education</td>
+                  <td>Delhi Public School, Nacharam</td>
+                  <td>CBSE</td>
+                  <td>2019</td>
+                  <td>95.6%</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <hr class="mb-4" />
+          <h3 class="mb-3" id="tech"><u>Technical Skills:</u></h3>
+          <h4>Programming Languages:</h4>
           <ul>
-            <li>6WD Rover with a 6-DOF Robotic Arm</li>
-            <li>Used ROS Melodic and MAVROS on NVIDIA Jetson Nano for automation</li>
-            <li>Data acquired using IMU, GPS, LIDAR and Cameras</li>
-            <li>Built for Industrial and Space applications such as:
-              <ul>
-                <li>Pick and Place operations</li>
-                <li>Sample collection and delivery</li>
-                <li>Mapping of surroundings</li>
-              </ul>
-            </li>
+            <li>C</li>
+            <li>C++</li>
+            <li>Java</li>
+            <li>Python</li>
           </ul>
-          </li>
-          <li><b>Faculty Recruiting and Management:</b>
-            <ul>
-              <li>Developed web application using MERN stack to streamline Faculty Recruitment and Management</li>
-              <li>Used MongoDB for improved data security and storage</li>
-              <li>Elaborated on user roles, data access and important services</li>
-            </ul>
-          </li>
-        </ul>
-        <hr />
-        <h3 id="ac"><u>Achievements:</u></h3>
-        <ul>
-          <li>Silver Medal in Python for Data Science Course (NPTEL)</li>
-          <li>Silver Medal in Lighter than Air Systems Course (NPTEL)</li>
-        </ul>
-        <hr />
-        <h3 id="con"><u>Contact Details:</u></h3>
-        <ul>
-          <li><a style="font-weight: bold">Phone Number:</a> 7014294747</li>
-        </ul>
+          <h4>Databases:</h4>
+          <ul>
+            <li>MySQL</li>
+          </ul>
+          <h4>Web Technologies:</h4>
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Bootstrap</li>
+            <li>Node</li>
+          </ul>
+          <hr class="mb-4" />
+          <h3 class="mb-3" id="pr"><u>Projects:</u></h3>
+          <div class="card mb-3">
+            <div class="card-body">
+              <h5 class="card-title">
+                Planetary Rover with Robotic Arm using ROS
+              </h5>
+              <ul>
+                <li>6WD Rover with a 6-DOF Robotic Arm</li>
+                <li>
+                  Used ROS Melodic and MAVROS on NVIDIA Jetson Nano for
+                  automation
+                </li>
+                <li>Data acquired using IMU, GPS, LIDAR, and Cameras</li>
+                <li>
+                  Built for Industrial and Space applications such as:
+                  <ul>
+                    <li>Pick and Place operations</li>
+                    <li>Sample collection and delivery</li>
+                    <li>Mapping of surroundings</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="card mb-3">
+            <div class="card-body">
+              <h5 class="card-title">Faculty Recruiting and Management</h5>
+              <ul>
+                <li>
+                  Developed web application using MERN stack to streamline
+                  Faculty Recruitment and Management
+                </li>
+                <li>Used MongoDB for improved data security and storage</li>
+                <li>
+                  Elaborated on user roles, data access, and important services
+                </li>
+              </ul>
+            </div>
+          </div>
+          <hr class="mb-4" />
+          <h3 class="mb-3" id="ac"><u>Achievements:</u></h3>
+          <span class="badge bg-secondary mb-2"
+            >Silver Medal in Python for Data Science Course (NPTEL)</span
+          >
+          <span class="badge bg-secondary"
+            >Silver Medal in Lighter than Air Systems Course (NPTEL)</span
+          >
+          <hr class="mb-4" />
+          <h3 class="mb-3" id="con"><u>Contact Details:</u></h3>
+          <ul>
+            <li><strong>Phone Number:</strong> 7014294747</li>
+          </ul>
+        </div>
       </div>
+      <!-- </div> -->
     </main>
-    <footer>
-      <!-- place footer here -->
-    </footer>
-    <!-- Bootstrap JavaScript Libraries -->
+    <footer class="bg-dark text-white text-center py-3"></footer>
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
       integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
       crossorigin="anonymous"
     ></script>
-
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
       integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
